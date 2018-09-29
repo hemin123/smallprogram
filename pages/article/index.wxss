@@ -1,0 +1,14 @@
+/* pages/article/index.wxss */
+
+@import'./article-item-template/article-item-template.wxss';
+
+.swiper{
+  height: 500rpx;
+  width: 100%;
+}
+.swiper-item{
+  width: 100%;
+}
+
+
+

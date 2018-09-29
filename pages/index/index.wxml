@@ -1,0 +1,11 @@
+<view class='container'>
+  <view class='userinfo'>
+    <image src='/images/index/5.jpg' class='userinfo-img'></image>
+    <text class='userinfo-name'>name</text>
+  </view>
+
+  <view class='motto' bindtap='bindclick'>
+     <text bindtap='tapText'>开启旅程</text>
+      
+  </view>
+</view>

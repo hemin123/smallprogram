@@ -1,0 +1,27 @@
+
+{
+
+  "pages":[
+    
+    "pages/index/index",
+    "pages/article/index",
+    "pages/movie/movie",
+    "pages/movie/movie-more/movie-more",
+    "pages/article/article-detail/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#f12"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/article/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "日志"
+      }
+    ]
+  }
+}

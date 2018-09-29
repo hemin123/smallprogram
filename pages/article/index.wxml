@@ -1,0 +1,21 @@
+<import src="./article-item-template/article-item-template.wxml" />
+<view>
+<swiper class='swiper' interval='2000' autoplay='true'>
+<swiper-item >
+<image class='swiper-item' src='/images/swiper/1.jpg'></image>
+</swiper-item>
+<swiper-item>
+<image class='swiper-item' src='/images/swiper/2.jpg'></image>
+</swiper-item>
+</swiper>
+
+<view class='article-box'>
+  <block wx:for="{{articles}}" wx:for-item="article" wx:for-index="idx" wx:key="idx" >
+  <view catchtap='tapArticleItem'   data-article-id='{{article.articleId}}'>
+  
+  <template is="articleItem" data="{{...article}}" />
+  </view>
+  </block>
+</view>
+
+</view>

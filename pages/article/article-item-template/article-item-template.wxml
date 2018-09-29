@@ -1,0 +1,20 @@
+  
+<template name="articleItem">
+  <view class='article-item' >
+      <view class='article-head'>
+        <image class='article-head-avatar'  src='{{avatar}}' ></image>
+        <text>{{data}}</text>
+      </view>
+      <text class='article-title'>{{title}}</text>
+      <image class='article-img' src='{{img}}'></image>
+      <text class='article-description'>{{description}}</text>
+      <view class='article-footer'>
+        <image class='article-footer-img' src='{{img}}'></image>
+        <text class='article-footer-text'>{{like}}</text>
+        <image class='article-footer-img' src='/images/swiper/2.jpg'></image>
+        <text class='article-footer-text'>{{view}}</text>
+
+      </view>
+  </view>
+
+</template >

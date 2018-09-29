@@ -1,0 +1,15 @@
+<!--pages/movie/movie-more/movie-more.wxml-->
+<text>pages/movie/movie-more/movie-more.wxml</text>
+
+
+<import src="../movie-item-template/movie-item-template.wxml" />
+<view class='movie-more'>
+  <!-- <template is="movieListTemplate" data="{{movies:inTheatersData,tag:movieTag}}"/> -->
+
+</view>
+
+    <view class='movie-more'>
+      <block wx:for="{{movies}}" wx:for-item="movie" wx:key="">
+      <template is="movieItemTemplate" data="{{...movie}}" />
+      </block>
+    </view>
