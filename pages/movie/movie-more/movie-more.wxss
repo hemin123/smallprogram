@@ -1,1 +1,13 @@
 /* pages/movie/movie-more/movie-more.wxss */
+
+@import '../movie-item-template/movie-item-template.wxss';
+
+.more-list{
+  padding: 10px 0px 0px 10px;
+}
+.more-list  .movie-item-box{
+  float: left;
+  margin-right: 35rpx;
+  margin-bottom: 30rpx;
+}
+

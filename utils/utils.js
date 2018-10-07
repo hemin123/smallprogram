@@ -11,18 +11,6 @@ function coverStarsToArray(stars) {
   return arr;
 }
 
- function getMovieListData(url, success) {
-
-  wx.request({
-    url: url,
-    header: {
-      'content-type': 'application/json' // 默认值
-    },
-    success(res) {
-      success(formatData(res.data));
-    }
-  })
-}
 function formatData(data) {
   var arr = [];
   for (var i = 0; i < data.subjects.length; i++) {
@@ -35,8 +23,18 @@ function formatData(data) {
   }
   return arr;
 }
+function getMovieListData(url, success) {
 
-
+  wx.request({
+    url: url,
+    header: {
+      'content-type': 'application/json' // 默认值
+    },
+    success(res) {
+      success(formatData(res.data));
+    }
+  })
+}
 
 module.exports = {
   coverStarsToArray: coverStarsToArray,
